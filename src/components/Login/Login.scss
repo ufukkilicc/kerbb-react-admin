@@ -1,0 +1,42 @@
+@import "../../common/scss/colors";
+@import "../../common/scss/fonts";
+@import "../../common/scss/global";
+
+.login-container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 10px;
+  background-color: white;
+  width: 25rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  .login-header-container {
+    color: $kerbb-color-main;
+    opacity: 0.9;
+    margin-bottom: 5rem;
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+  .forgot-password-container {
+    box-shadow: none;
+    .forgot-password {
+      color: $kerbb-color-main;
+      opacity: 0.8;
+    }
+  }
+  .website-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    opacity: 0.6;
+  }
+}

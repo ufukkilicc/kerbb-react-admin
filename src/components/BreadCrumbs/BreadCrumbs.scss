@@ -1,0 +1,26 @@
+@import "../../common/scss/colors";
+@import "../../common/scss/fonts";
+@import "../../common/scss/global";
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  color: $kerbb-color-dark;
+  opacity: 0.6;
+  .breadcrumbs-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    .item-icon {
+      transform: rotate(90deg);
+    }
+    .item-header-active {
+      color: $kerbb-color-main;
+    }
+  }
+}

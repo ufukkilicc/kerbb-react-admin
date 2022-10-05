@@ -1,0 +1,62 @@
+@import "../../common/scss/colors";
+@import "../../common/scss/fonts";
+@import "../../common/scss/global";
+
+.not-found-page-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .not-found-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $kerbb-font-not-found-content;
+    .not-found-pre-content-container {
+      .not-found-pre-content {
+        letter-spacing: 3px;
+        opacity: 0.8;
+      }
+    }
+    .not-found-header-container {
+      .not-found-header {
+        font-size: 20rem;
+        font-family: $kerbb-font-not-found-header;
+        font-weight: 900;
+        line-height: 90%;
+        span {
+          color: $kerbb-color-main;
+          opacity: 0.6;
+        }
+      }
+    }
+    .not-found-post-content-container {
+      .not-found-post-content {
+        font-size: 1rem;
+        letter-spacing: 3px;
+        opacity: 0.8;
+      }
+    }
+    .not-found-navi-container {
+      margin-top: 2rem;
+      .navi-home-container {
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        background-color: $kerbb-color-light;
+        color: black;
+        cursor: pointer;
+        .navi-home-header {
+          font-family: $kerbb-font-not-found-header;
+          font-size: 1rem;
+          letter-spacing: 3px;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../common/scss/colors";
+@import "../../common/scss/fonts";
+@import "../../common/scss/global";
+
+.dashboard-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  .side-navbar-container {
+    height: 100vh;
+    border-right: 1px solid rgba(12, 8, 47, 0.2);
+  }
+  .dashboard-inner-container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.5fr 6fr;
+    .dashboard-inner-inner-container {
+      padding: 1rem;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

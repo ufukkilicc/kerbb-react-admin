@@ -1,0 +1,243 @@
+@import "../../../common/scss/colors";
+@import "../../../common/scss/fonts";
+@import "../../../common/scss/global";
+
+.profile-page-settings-page {
+  max-height: 90vh;
+  overflow-y: scroll;
+  width: 100%;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  .profile-page-settings-header-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .profile-page-settings-header {
+      color: $kerbb-color-dark;
+      opacity: 0.5;
+    }
+  }
+  .profile-page-id-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(12, 8, 47, 0.2);
+    padding-bottom: 1rem;
+    .profile-page-id-header {
+      font-size: 16px;
+      color: $kerbb-color-dark;
+    }
+    .profile-page-id {
+      font-size: 14px;
+      color: $kerbb-color-dark;
+      font-weight: 400;
+    }
+  }
+  .profile-page-tracking-id-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(12, 8, 47, 0.2);
+    padding-bottom: 1rem;
+    .profile-page-tracking-id-header {
+      font-size: 16px;
+      color: $kerbb-color-dark;
+    }
+    .profile-page-tracking-id {
+      font-size: 14px;
+      color: $kerbb-color-dark;
+      font-weight: 400;
+    }
+  }
+  .profile-page-user-name-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(12, 8, 47, 0.2);
+    padding-bottom: 1rem;
+    .profile-page-user-name-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .profile-page-user-name-header {
+        font-size: 16px;
+        color: $kerbb-color-dark;
+      }
+      .profile-page-user-name {
+        font-size: 14px;
+        color: $kerbb-color-dark;
+        font-weight: 400;
+      }
+    }
+  }
+  .profile-page-user-surname-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(12, 8, 47, 0.2);
+    padding-bottom: 1rem;
+    .profile-page-user-surname-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .profile-page-user-surname-header {
+        font-size: 16px;
+        color: $kerbb-color-dark;
+      }
+      .profile-page-user-surname {
+        font-size: 14px;
+        color: $kerbb-color-dark;
+        font-weight: 400;
+      }
+    }
+  }
+  .profile-page-user-mail-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(12, 8, 47, 0.2);
+    padding-bottom: 1rem;
+    .profile-page-user-mail-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .profile-page-user-mail-header {
+        font-size: 16px;
+        color: $kerbb-color-dark;
+      }
+      .profile-page-user-mail {
+        font-size: 14px;
+        color: $kerbb-color-dark;
+        font-weight: 400;
+      }
+    }
+  }
+  .profile-page-user-password-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(12, 8, 47, 0.2);
+    padding-bottom: 1rem;
+    .profile-page-user-password-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .profile-page-user-password-header {
+        font-size: 16px;
+        color: $kerbb-color-dark;
+      }
+      .profile-page-user-password-input {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        .profile-page-user-password-icon {
+          color: $kerbb-color-dark;
+          opacity: 0.9;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.5;
+          }
+          &:active {
+            opacity: 1;
+          }
+        }
+      }
+      .profile-page-user-password {
+        font-size: 14px;
+        color: $kerbb-color-dark;
+        font-weight: 400;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .profile-page-user-password-icon {
+          transform: scale(0.5);
+          margin-right: -5px;
+        }
+      }
+    }
+  }
+  .profile-page-user-roles-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(12, 8, 47, 0.2);
+    padding-bottom: 1rem;
+    .profile-page-user-roles-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .profile-page-user-roles-header {
+        font-size: 16px;
+        color: $kerbb-color-dark;
+      }
+      .profile-page-user-roles-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .profile-page-user-roles-item {
+          padding: 10px 15px;
+          background-color: $kerbb-color-success;
+          border-radius: 5px;
+          font-size: 14px;
+          color: white;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+  .profile-page-user-groups-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(12, 8, 47, 0.2);
+    padding-bottom: 1rem;
+    .profile-page-user-groups-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .profile-page-user-groups-header {
+        font-size: 16px;
+        color: $kerbb-color-dark;
+      }
+      .profile-page-user-groups-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+    }
+  }
+}

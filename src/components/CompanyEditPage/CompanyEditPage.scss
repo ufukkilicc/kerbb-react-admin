@@ -1,0 +1,124 @@
+@import "../../common/scss/colors";
+@import "../../common/scss/fonts";
+@import "../../common/scss/global";
+
+.company-edit-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  .breadcrumbs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .company-edit-header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .company-edit-header {
+      color: $kerbb-color-dark;
+      opacity: 0.5;
+    }
+  }
+  .company-container {
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    .image-logo-container {
+      position: relative;
+      border-radius: 5px;
+      height: 200px;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      img.image-active {
+        border-radius: 5px;
+        height: 200px;
+        width: 200px;
+      }
+      img.image {
+        display: none;
+      }
+      .image-loader-active {
+        border-radius: 5px;
+      }
+      .image-loader {
+        display: none;
+      }
+      .logo-image-upload-button-container-active {
+        position: absolute;
+      }
+      .logo-image-upload-button-container {
+        display: none;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .image-cover-container {
+      position: relative;
+      border-radius: 5px;
+      height: 200px;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      img.image-active {
+        border-radius: 5px;
+        height: 200px;
+        width: 200px;
+      }
+      img.image {
+        display: none;
+      }
+      .image-loader-active {
+        border-radius: 5px;
+      }
+      .image-loader {
+        display: none;
+      }
+      .logo-image-upload-button-container-active {
+        position: absolute;
+      }
+      .logo-image-upload-button-container {
+        display: none;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .company-edit-form-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      .button-container {
+        height: 100%;
+      }
+      .company-edit-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+      }
+    }
+  }
+}

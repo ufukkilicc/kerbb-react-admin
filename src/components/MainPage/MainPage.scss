@@ -1,0 +1,185 @@
+@import "../../common/scss/colors";
+@import "../../common/scss/fonts";
+@import "../../common/scss/global";
+
+.main-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  .widget-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  .featured-chart-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    .featured-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      gap: 1rem;
+      .featured-header-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .featured-header {
+          @include kerbb-header();
+        }
+      }
+      .circular-progress-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .circular-progress-percentage {
+          position: absolute;
+          @include kerbb-header();
+        }
+      }
+      .scrappers-header-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .scrappers-header {
+          @include kerbb-header();
+        }
+      }
+      .scrappers-info-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .scrappers-succeed-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 0.3rem;
+          .scrappers-succeed-header {
+            @include kerbb-header();
+          }
+          .scrappers-succeed-count {
+            opacity: 0.8;
+            color: green;
+          }
+        }
+        .scrappers-failed-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 0.3rem;
+          .scrappers-failed-header {
+            @include kerbb-header();
+          }
+          .scrappers-failed-count {
+            opacity: 0.8;
+            color: red;
+          }
+        }
+      }
+      .scrappers-info-second-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .scrappers-time-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 0.3rem;
+          .scrappers-time-header {
+            @include kerbb-header();
+          }
+          .scrappers-time-count {
+            opacity: 0.8;
+            color: green;
+          }
+        }
+      }
+      .scrappers-info-third-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        .scrappers-info-third-header-container {
+          .scrappers-info-third-header {
+            @include kerbb-header();
+          }
+        }
+        .scrappers-info-third-inner-container {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          .scrappers-added-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.3rem;
+            .scrappers-added-header {
+              @include kerbb-header();
+            }
+            .scrappers-added-count {
+              opacity: 0.8;
+              color: green;
+            }
+          }
+          .scrappers-found-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.3rem;
+            .scrappers-found-header {
+              @include kerbb-header();
+            }
+            .scrappers-found-count {
+              @include kerbb-header();
+            }
+          }
+          .scrappers-extracted-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.3rem;
+            .scrappers-extracted-header {
+              @include kerbb-header();
+            }
+            .scrappers-extracted-count {
+              opacity: 0.8;
+              color: red;
+            }
+          }
+        }
+      }
+      .see-all-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .see-all {
+          @include kerbb-header();
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+      }
+    }
+  }
+}

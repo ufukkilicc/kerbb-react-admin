@@ -1,0 +1,118 @@
+@import "../../common/scss/colors";
+@import "../../common/scss/fonts";
+@import "../../common/scss/global";
+
+.news-edit-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  .breadcrumbs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .news-edit-header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .news-edit-header {
+      color: $kerbb-color-dark;
+      opacity: 0.5;
+    }
+  }
+  .news-container {
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    .news-images-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      .image-container {
+        position: relative;
+        border-radius: 5px;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        img.image-active {
+          border-radius: 5px;
+          height: 200px;
+          width: 200px;
+        }
+        img.image {
+          display: none;
+        }
+        .image-loader-active {
+          border-radius: 5px;
+        }
+        .image-loader {
+          display: none;
+        }
+        .news-image-upload-button-container-active {
+          position: absolute;
+        }
+        .news-image-upload-button-container {
+          display: none;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .news-edit-form-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      .button-container {
+        height: 100%;
+      }
+      .news-edit-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        .publisher-detail-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 1rem;
+          .publisher-detail {
+            color: $kerbb-color-dark;
+            opacity: 0.8;
+          }
+        }
+        .editor {
+          width: 50rem;
+          height: 15rem;
+          .ck-editor__editable_inline {
+            width: 50rem;
+            height: 13rem;
+          }
+        }
+      }
+    }
+  }
+}

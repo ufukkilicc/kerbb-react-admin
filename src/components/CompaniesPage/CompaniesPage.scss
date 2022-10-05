@@ -1,0 +1,115 @@
+@import "../../common/scss/colors";
+@import "../../common/scss/fonts";
+@import "../../common/scss/global";
+
+.companies-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  .breadcrumbs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .company-add-button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .list-table-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      opacity: 0.9;
+    }
+    .content-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 0.9em;
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      tbody {
+        tr.company {
+          td.company-image {
+            height: 50px;
+            width: 50px;
+            border-radius: 5px;
+            img {
+              height: 50px;
+              width: 50px;
+              border-radius: 5px;
+            }
+          }
+        }
+        tr.company-highlighted {
+          background-color: $kerbb-color-light;
+          td.company-image {
+            height: 50px;
+            width: 50px;
+            border-radius: 5px;
+            img {
+              height: 50px;
+              width: 50px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+    .content-table thead tr {
+      background-color: $kerbb-color-main;
+      color: white;
+      text-align: left;
+      font-weight: bold;
+    }
+    .content-table th,
+    td {
+      padding: 12px 15px;
+    }
+
+    .content-table tbody tr {
+      border-bottom: 1px solid #dddddd;
+    }
+    .job-tags {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      ul.tag-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+    .content-table tbody tr.active-row {
+      font-weight: bold;
+      background-color: $kerbb-color-light;
+    }
+    // .content-table tbody tr:nth-of-type(even) {
+    //   background-color: #f3f3f3;
+    // }
+    .content-table tbody tr:last-of-type {
+      border-bottom: 2px solid $kerbb-color-main;
+    }
+  }
+  .pagination-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

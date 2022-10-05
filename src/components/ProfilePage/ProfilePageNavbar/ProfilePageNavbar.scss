@@ -1,0 +1,26 @@
+@import "../../../common/scss/colors";
+@import "../../../common/scss/fonts";
+@import "../../../common/scss/global";
+
+.profile-page-navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 85vh;
+  position: sticky;
+  padding: 1rem 3rem;
+
+  border-right: 1px solid rgba(12, 8, 47, 0.2);
+  .profile-page-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .profile-page-item {
+      .profile-page-settings {
+        text-decoration: none;
+        color: $kerbb-color-dark;
+      }
+    }
+  }
+}

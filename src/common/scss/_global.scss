@@ -1,0 +1,7 @@
+@import "./colors";
+@import "./fonts";
+
+@mixin kerbb-header {
+  color: $kerbb-color-dark;
+  opacity: 0.5;
+}

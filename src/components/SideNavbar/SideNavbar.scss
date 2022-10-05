@@ -1,0 +1,368 @@
+@import "../../common/scss/colors";
+@import "../../common/scss/fonts";
+@import "../../common/scss/global";
+
+.side-navbar {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.5fr 6fr;
+  .side-navbar-logo-container {
+    border-bottom: 1px solid rgba(12, 8, 47, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .side-navbar-items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 2rem;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .main-list-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0.5rem;
+      h4 {
+        @include kerbb-header();
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding-left: 1rem;
+        li {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          .main-item-icon {
+            color: $kerbb-color-main;
+            opacity: 0.9;
+          }
+          .main-item-header {
+            @include kerbb-header();
+          }
+        }
+        .active {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          background-color: $kerbb-color-light;
+          padding: 0 0.5rem;
+          border-radius: 5px;
+          .main-item-icon {
+            color: $kerbb-color-main;
+            opacity: 0.9;
+          }
+          .main-item-header {
+            color: $kerbb-color-main;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+    .lists-list-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0.5rem;
+      h4 {
+        @include kerbb-header();
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding-left: 1rem;
+        li {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          .lists-item-icon {
+            color: $kerbb-color-main;
+            opacity: 0.9;
+          }
+          .lists-item-header {
+            @include kerbb-header();
+          }
+        }
+        .active {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          background-color: $kerbb-color-light;
+          padding: 0 0.5rem;
+          border-radius: 5px;
+          .lists-item-icon {
+            color: $kerbb-color-main;
+            opacity: 0.9;
+          }
+          .lists-item-header {
+            color: $kerbb-color-main;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+    .features-list-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0.5rem;
+      h4 {
+        @include kerbb-header();
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding-left: 1rem;
+        li {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          .features-item-icon {
+            color: $kerbb-color-main;
+            opacity: 0.9;
+          }
+          .features-item-header {
+            @include kerbb-header();
+          }
+        }
+        .active {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          background-color: $kerbb-color-light;
+          padding: 0 0.5rem;
+          border-radius: 5px;
+          .features-item-icon {
+            color: $kerbb-color-main;
+            opacity: 0.9;
+          }
+          .features-item-header {
+            color: $kerbb-color-main;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+    .usefuls-list-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0.5rem;
+      h4 {
+        @include kerbb-header();
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding-left: 1rem;
+        li {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          .usefuls-item-icon {
+            color: $kerbb-color-main;
+            opacity: 0.9;
+          }
+          .usefuls-item-header {
+            @include kerbb-header();
+          }
+        }
+        .active {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          background-color: $kerbb-color-light;
+          padding: 0 0.5rem;
+          border-radius: 5px;
+          .usefuls-item-icon {
+            color: $kerbb-color-main;
+            opacity: 0.9;
+          }
+          .usefuls-item-header {
+            color: $kerbb-color-main;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+    .service-list-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0.5rem;
+      h4 {
+        @include kerbb-header();
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding-left: 1rem;
+        li {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          .service-item-icon {
+            color: $kerbb-color-main;
+            opacity: 0.9;
+          }
+          .service-item-header {
+            @include kerbb-header();
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            // ALSNDLANSLDNASNDANL LOOK HERE WHİTE SPACE NEW LINE
+          }
+        }
+        .active {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          background-color: $kerbb-color-light;
+          padding: 0 0.5rem;
+          border-radius: 5px;
+          .service-item-icon {
+            color: $kerbb-color-main;
+            opacity: 0.9;
+          }
+          .service-item-header {
+            color: $kerbb-color-main;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+    .user-list-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0.5rem;
+      h4 {
+        @include kerbb-header();
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding-left: 1rem;
+        li {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          .user-item-icon {
+            color: $kerbb-color-main;
+            opacity: 0.9;
+          }
+          .user-item-header {
+            @include kerbb-header();
+          }
+        }
+        .active {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          background-color: $kerbb-color-light;
+          padding: 0 0.5rem;
+          border-radius: 5px;
+          .service-item-icon {
+            color: $kerbb-color-main;
+            opacity: 0.9;
+          }
+          .service-item-header {
+            color: $kerbb-color-main;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+    .theme-list-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0.5rem;
+      h4 {
+        @include kerbb-header();
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding-left: 1rem;
+        li {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          border-radius: 20px;
+          .theme-item-icon-dark {
+            opacity: 0.9;
+            color: $kerbb-color-light;
+          }
+          .theme-item-icon-light {
+            opacity: 0.9;
+            color: $kerbb-color-dark;
+          }
+          .theme-item-header {
+            @include kerbb-header();
+          }
+        }
+      }
+    }
+  }
+}

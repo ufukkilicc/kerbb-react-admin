@@ -1,0 +1,303 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.82.90
+# Built for i686-pc-mingw32
+# Copyright (C) 1988-2012 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Wed Oct 05 13:15:07 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# makefile
+MAKEFLAGS = Rrqp
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile
+CURDIR := c:/Users/ufukk/Desktop/Coding Projects/Kerbb/kerbb-react-admin
+# default
+SHELL := sh.exe
+# environment
+WINDIR = C:\Windows
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVE = C:\Users\ufukk\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+TMP = C:\Users\ufukk\AppData\Local\Temp
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_CWD = C:\Users\ufukk\AppData\Local\Programs\Microsoft VS Code
+# environment
+PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Users\ufukk\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\ufukk\AppData\Local\Programs\Python\Python310\;C:\Users\ufukk\AppData\Local\Microsoft\WindowsApps;C:\Users\ufukk\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ufukk\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Users\ufukk\AppData\Local\Programs\mongosh;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\MinGW\bin;
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+USERPROFILE = C:\Users\ufukk
+#  
+environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+NUMBER_OF_PROCESSORS = 4
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_28788_UEXOJDIOUQXPEAIU
+# environment
+COMPUTERNAME = DESKTOP-7JP9R10
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = ufukk
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\ufukk\AppData\Roaming\Code\CachedData\74b1f979648cc44d385a2286793c226e611f59e7
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\DESKTOP-7JP9R10
+# environment
+ONEDRIVECONSUMER = C:\Users\ufukk\OneDrive
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = DESKTOP-7JP9R10
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# default
+MAKE_VERSION := 3.82.90
+# makefile
+.DEFAULT_GOAL := build-dev
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+LOCALAPPDATA = C:\Users\ufukk\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\f756fc3d327b142fea6c07452d166730-1.71.2-main-sock
+# environment
+HOMEPATH = \Users\ufukk
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+SYSTEMROOT = C:\Windows
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\ufukk\AppData\Roaming
+# environment
+TEMP = C:\Users\ufukk\AppData\Local\Temp
+# environment
+COMSPEC = C:\Windows\system32\cmd.exe
+# default
+MAKEFILES := 
+# automatic
+<F =  
+$(notdir $<)
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 9e09
+# default
+.INCLUDE_DIRS = C:/MinGW/include
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 28788
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-7JP9R10
+# variable set hash-table stat 
+s:
+# Load=87/1024=8%, Rehash=0, Collisions=11/106=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# C:\ProgramData\DockerDesktop\version-bin: could not be stat'd.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633528696): 30 files, no impossibilities.
+# . (key c:/Users/ufukk/Desktop/Coding Projects/Kerbb/kerbb-react-admin, mtime 1661115187): 18 files, no impossibilities.
+# C:\Users\ufukk\AppData\Local\Programs\mongosh (key C:/Users/ufukk/AppData/Local/Programs/mongosh, mtime 1652285564): 8 files, no impossibilities.
+# C:\Users\ufukk\AppData\Roaming\npm (key C:/Users/ufukk/AppData/Roaming/npm, mtime 1662554638): 22 files, no impossibilities.
+# C:\Program Files\Docker\Docker\resources\bin (key C:/Program Files/Docker/Docker/resources/bin, mtime 1652439387): 13 files, no impossibilities.
+# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1653046097): 8 files, no impossibilities.
+# C:\Windows\Syste 
+m32\OpenSSH\: could not be stat'd.
+# C:\MinGW\bin (key C:/MinGW/bin, mtime 1660157139): 53 files, no impossibilities.
+# C:\Users\ufukk\AppData\Local\Microsoft\WindowsApps (key C:/Users/ufukk/AppData/Local/Microsoft/WindowsApps, mtime 1664624454): 15 files, no impossibilities.
+# C:\Users\ufukk\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/ufukk/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1663265500): 4 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1663201059): 106 files, no impossibilities.
+# C:\Users\ufukk\AppData\Local\Programs\Python\Python310\ (key C:/Users/ufukk/AppData/Local/Programs/Python/Python310/, mtime 1649688278): 18 files, no impossibilities.
+# C:\Users\ufukk\AppData\Local\Programs\Python\Python310\Scripts\ (key C:/Users/ufukk/AppData/Local/Programs/Python/Python310/Scripts/, mtime 1649866859): 9 files, no impossibilities.
+# C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1657925746): 153 files, no impossibilities.
+# C:\Program Files\MongoDB\Too 
+ls\100\bin (key C:/Program Files/MongoDB/Tools/100/bin, mtime 1657367794): 11 files, no impossibilities.
+# C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1652102013): 13 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1663233862): 2870 files, no impossibilities.
+# C:\Program Files\nodejs (key C:/Program Files/nodejs, mtime 1652102013): 13 files, no impossibilities.
+# C:\Program Files\MongoDB\Server\5.0\bin (key C:/Program Files/MongoDB/Server/5.0/bin, mtime 1652299793): 9 files, no impossibilities.
+
+# 3373 files, no impossibilities in 20 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+build-production:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	docker build \
+		-t kerbb-admin-production:production 
+ \
+		-f Dockerfile.production .
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-16 16:47:36
+#  File has been updated.
+#  Successfully updated.
+
+build-local:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 5):
+	docker build \
+		-t kerbb-admin-production:local \
+		-f Dockerfile.production .
+
+build-dev:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	docker build -t kerbb-admin-dev -f Dockerfile.dev .
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=7/1024=1%, Rehash=0, Collisions=0/17=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 7 (5) / strings = 3331 / storage = 49983 B / avg = 15 B
+# current buf: size = 8174 B / used = 990 B / count = 75 / avg = 13 B
+# other used: total = 41809 B / count = 3256 / avg = 12 B
+# other free: total = 51 B / max = 16 B / min = 2 B / avg = 8 B
+
+# strcache performance: lookups = 3405 / hit rate = 2%
+# hash-table stats:
+# Load=3331/8192=41%, Rehash=0, Collisions=1113/3405=33%
+# Finished Make data base on Wed Oct 05 13:15:07 2022
+
+ 
+make.exe: *** No rule to make target 'all'.  Stop.
+

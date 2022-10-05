@@ -1,0 +1,383 @@
+@import "../../common/scss/colors";
+@import "../../common/scss/fonts";
+@import "../../common/scss/global";
+
+.scrappers-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  .breadcrumbs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .stat-panel-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    padding: 2rem 3rem;
+    .scrappers-scrape-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+      .scrape-buttons-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        .scrape-one-button {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+      .scrape-result-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+        gap: 1rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 5px;
+        height: 300px;
+        width: 250px;
+        .scrape-result-header {
+          @include kerbb-header();
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+        .scrape-result-inner-container {
+          .scrape-one-result {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            .scrape-status-container {
+              .scrape-status-success-header {
+                color: $kerbb-color-success;
+              }
+              .scrape-status-failed-header {
+                color: $kerbb-color-error;
+              }
+            }
+            .scrape-time-container {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              gap: 0.5rem;
+              .scrape-time-header {
+                @include kerbb-header();
+              }
+            }
+            .scrape-jobs-found-container {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              gap: 0.5rem;
+              .scrape-jobs-found-header {
+                @include kerbb-header();
+              }
+            }
+            .scrape-jobs-added-container {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              gap: 0.5rem;
+              .scrape-jobs-added-header {
+                @include kerbb-header();
+              }
+              .scrape-jobs-added {
+                color: $kerbb-color-success;
+              }
+            }
+            .scrape-jobs-extracted-container {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              gap: 0.5rem;
+              .scrape-jobs-extracted-header {
+                @include kerbb-header();
+              }
+              .scrape-jobs-extracted {
+                color: $kerbb-color-error;
+              }
+            }
+          }
+          .scrape-all-result {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            .scrape-all-result-section-one-container {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              gap: 2rem;
+              .scrape-success-count-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                .scrape-success-count-header {
+                  @include kerbb-header();
+                }
+                .scrape-success-count {
+                  color: $kerbb-color-success;
+                }
+              }
+              .scrape-failed-count-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                .scrape-failed-count-header {
+                  @include kerbb-header();
+                }
+                .scrape-failed-count {
+                  color: $kerbb-color-error;
+                }
+              }
+            }
+            .scrape-all-result-section-two-container {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              gap: 2rem;
+              .scrape-jobs-added-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                .scrape-jobs-added-header {
+                  @include kerbb-header();
+                }
+                .scrape-jobs-added {
+                  color: $kerbb-color-success;
+                }
+              }
+              .scrape-jobs-extracted-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                .scrape-jobs-extracted-header {
+                  @include kerbb-header();
+                }
+                .scrape-jobs-extracted {
+                  color: $kerbb-color-error;
+                }
+              }
+            }
+            .scrape-all-result-section-three-container {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              gap: 2rem;
+              .scrape-time-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                .scrape-time-header {
+                  @include kerbb-header();
+                }
+                .scrape-time {
+                  color: $kerbb-color-success;
+                }
+              }
+            }
+          }
+          // .progress-container-active {
+          //   position: absolute;
+          //   width: 100%;
+          //   height: 100%;
+          //   display: flex;
+          //   justify-content: center;
+          //   align-items: center;
+          //   background-color: black;
+          //   opacity: 0.4;
+          //   .progress-loader-container {
+          //     align-self: center;
+          //     opacity: 1;
+          //   }
+          // }
+          // .progress-container {
+          //   display: none;
+          // }
+        }
+      }
+    }
+  }
+  .list-table-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .progress-container-active {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      opacity: 0.4;
+      .progress-loader-container {
+        align-self: center;
+        opacity: 1;
+      }
+    }
+    .progress-container {
+      display: none;
+    }
+    h4 {
+      opacity: 0.9;
+    }
+    .content-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9em;
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      tbody {
+        tr.scrapper {
+          td.scrapper-image {
+            height: 50px;
+            width: 50px;
+            border-radius: 5px;
+            img {
+              height: 50px;
+              width: 50px;
+              border-radius: 5px;
+            }
+          }
+          td.scrapper-jobs-added {
+            .scrapper-job-added-header-active {
+              color: $kerbb-color-success;
+            }
+          }
+          td.scrapper-jobs-extracted {
+            .scrapper-job-extracted-header-active {
+              color: $kerbb-color-error;
+            }
+          }
+        }
+      }
+    }
+    .content-table thead tr {
+      background-color: $kerbb-color-main;
+      color: white;
+      text-align: left;
+      font-weight: bold;
+    }
+    .content-table th,
+    td {
+      padding: 12px 15px;
+    }
+
+    .content-table tbody tr {
+      border-bottom: 1px solid #dddddd;
+      td.scrapper-status {
+        .scrapper-status-successful {
+          background-color: $kerbb-color-success;
+          padding: 5px 10px;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          h5 {
+            color: white;
+            font-size: 1rem;
+            letter-spacing: 1px;
+          }
+        }
+        .scrapper-status-failed {
+          background-color: $kerbb-color-error;
+          padding: 5px 10px;
+          border-radius: 5px;
+          h5 {
+            color: white;
+            font-size: 1rem;
+            letter-spacing: 1px;
+          }
+        }
+      }
+      td.scrapper-company-name {
+        .scrapper-company-name-empty {
+          background-color: $kerbb-color-warning;
+          padding: 5px 10px;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          h5 {
+            color: white;
+            font-size: 1rem;
+            letter-spacing: 1px;
+          }
+        }
+      }
+      .job-tags {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        ul.tag-list {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+        }
+      }
+      .content-table tbody tr.active-row {
+        font-weight: bold;
+        background-color: $kerbb-color-light;
+      }
+      // .content-table tbody tr:nth-of-type(even) {
+      //   background-color: #f3f3f3;
+      // }
+      .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid $kerbb-color-main;
+      }
+    }
+  }
+  .pagination-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
