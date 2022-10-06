@@ -154,101 +154,110 @@ const ScrappersPage = () => {
             </div>
           </div>
           <div className="scrape-result-container">
-            <h3 className="scrape-result-header">
-              {Object.keys(scrapeResult).length !== 0
-                ? scrapeResult.scrapper_title
-                  ? `SCRAPE ONE RESULT: ${scrapeResult.scrapper_title}`
-                  : "SCRAPE ALL RESULT"
-                : "NO SCRAPE RESULT"}
-            </h3>
-            <div className="scrape-result-inner-container">
-              {Object.keys(scrapeResult).length !== 0 ? (
-                scrapeResult.scrapper_title ? (
-                  <div className="scrape-one-result">
-                    <div className="scrape-status-container">
-                      {scrapeResult.scrapper_success ? (
-                        <h4 className="scrape-status-success-header">
-                          Success
-                        </h4>
-                      ) : (
-                        <h4 className="scrape-status-failed-header">Failed</h4>
-                      )}
-                    </div>
-                    <div className="scrape-time-container">
-                      <h4 className="scrape-time-header">Time Lasts(s)</h4>
-                      <h4 className="scrape-time">
-                        {`${scrapeResult.scrapper_time_lasts}''`}
-                      </h4>
-                    </div>
-                    <div className="scrape-jobs-found-container">
-                      <h4 className="scrape-jobs-found-header">Jobs Found</h4>
-                      <h4 className="scrape-jobs-found">
-                        {scrapeResult.scrapper_jobs_found}
-                      </h4>
-                    </div>
-                    <div className="scrape-jobs-added-container">
-                      <h4 className="scrape-jobs-added-header">Jobs Added</h4>
-                      <h4 className="scrape-jobs-added">
-                        {scrapeResult.scrapper_jobs_added_count}
-                      </h4>
-                    </div>
-                    <div className="scrape-jobs-extracted-container">
-                      <h4 className="scrape-jobs-extracted-header">
-                        Jobs Extracted
-                      </h4>
-                      <h4 className="scrape-jobs-extracted">
-                        {scrapeResult.scrapper_jobs_extracted_count}
-                      </h4>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="scrape-all-result">
-                    <div className="scrape-all-result-section-one-container">
-                      <div className="scrape-success-count-container">
-                        <h4 className="scrape-success-count-header">Succeed</h4>
-                        <h4 className="scrape-success-count">
-                          {scrapeResult.success_count}
+            {scrapeResult ? (
+              <h3 className="scrape-result-header">
+                {Object.keys(scrapeResult).length !== 0
+                  ? scrapeResult.scrapper_title
+                    ? `SCRAPE ONE RESULT: ${scrapeResult.scrapper_title}`
+                    : "SCRAPE ALL RESULT"
+                  : "NO SCRAPE RESULT"}
+              </h3>
+            ) : (
+              <div></div>
+            )}
+            {scrapeResult ? (
+              <div className="scrape-result-inner-container">
+                {Object.keys(scrapeResult).length !== 0 ? (
+                  scrapeResult.scrapper_title ? (
+                    <div className="scrape-one-result">
+                      <div className="scrape-status-container">
+                        {scrapeResult.scrapper_success ? (
+                          <h4 className="scrape-status-success-header">
+                            Success
+                          </h4>
+                        ) : (
+                          <h4 className="scrape-status-failed-header">
+                            Failed
+                          </h4>
+                        )}
+                      </div>
+                      <div className="scrape-time-container">
+                        <h4 className="scrape-time-header">Time Lasts(s)</h4>
+                        <h4 className="scrape-time">
+                          {`${scrapeResult.scrapper_time_lasts}''`}
                         </h4>
                       </div>
-                      <div className="scrape-failed-count-container">
-                        <h4 className="scrape-failed-count-header">Failed</h4>
-                        <h4 className="scrape-failed-count">
-                          {scrapeResult.false_count}
+                      <div className="scrape-jobs-found-container">
+                        <h4 className="scrape-jobs-found-header">Jobs Found</h4>
+                        <h4 className="scrape-jobs-found">
+                          {scrapeResult.scrapper_jobs_found}
                         </h4>
                       </div>
-                    </div>
-                    <div className="scrape-all-result-section-two-container">
                       <div className="scrape-jobs-added-container">
-                        <h4 className="scrape-jobs-added-header">Added</h4>
+                        <h4 className="scrape-jobs-added-header">Jobs Added</h4>
                         <h4 className="scrape-jobs-added">
-                          {scrapeResult.jobs_added_count}
+                          {scrapeResult.scrapper_jobs_added_count}
                         </h4>
                       </div>
                       <div className="scrape-jobs-extracted-container">
                         <h4 className="scrape-jobs-extracted-header">
-                          Extracted
+                          Jobs Extracted
                         </h4>
                         <h4 className="scrape-jobs-extracted">
-                          {scrapeResult.jobs_extracted_count}
+                          {scrapeResult.scrapper_jobs_extracted_count}
                         </h4>
                       </div>
                     </div>
-                    <div className="scrape-all-result-section-three-container">
-                      <div className="scrape-time-container">
-                        <h4 className="scrape-time-header">Time(s)</h4>
-                        <h4 className="scrape-time">{`${scrapeResult.time_lasts}''`}</h4>
+                  ) : (
+                    <div className="scrape-all-result">
+                      <div className="scrape-all-result-section-one-container">
+                        <div className="scrape-success-count-container">
+                          <h4 className="scrape-success-count-header">
+                            Succeed
+                          </h4>
+                          <h4 className="scrape-success-count">
+                            {scrapeResult.success_count}
+                          </h4>
+                        </div>
+                        <div className="scrape-failed-count-container">
+                          <h4 className="scrape-failed-count-header">Failed</h4>
+                          <h4 className="scrape-failed-count">
+                            {scrapeResult.false_count}
+                          </h4>
+                        </div>
+                      </div>
+                      <div className="scrape-all-result-section-two-container">
+                        <div className="scrape-jobs-added-container">
+                          <h4 className="scrape-jobs-added-header">Added</h4>
+                          <h4 className="scrape-jobs-added">
+                            {scrapeResult.jobs_added_count}
+                          </h4>
+                        </div>
+                        <div className="scrape-jobs-extracted-container">
+                          <h4 className="scrape-jobs-extracted-header">
+                            Extracted
+                          </h4>
+                          <h4 className="scrape-jobs-extracted">
+                            {scrapeResult.jobs_extracted_count}
+                          </h4>
+                        </div>
+                      </div>
+                      <div className="scrape-all-result-section-three-container">
+                        <div className="scrape-time-container">
+                          <h4 className="scrape-time-header">Time(s)</h4>
+                          <h4 className="scrape-time">{`${scrapeResult.time_lasts}''`}</h4>
+                        </div>
                       </div>
                     </div>
+                  )
+                ) : (
+                  <div className="scrape-result-none-container">
+                    <div className="scrape-result-icon-container">
+                      <DoNotDisturbIcon fontSize="large" />
+                    </div>
                   </div>
-                )
-              ) : (
-                <div className="scrape-result-none-container">
-                  <div className="scrape-result-icon-container">
-                    <DoNotDisturbIcon fontSize="large" />
-                  </div>
-                </div>
-              )}
-              {/* <div
+                )}
+                {/* <div
               className={
                 scrapeAll ? "progress-container-active" : "progress-container"
               }
@@ -257,7 +266,10 @@ const ScrappersPage = () => {
                 <CircularProgress color="primary" />
               </div>
             </div> */}
-            </div>
+              </div>
+            ) : (
+              <div></div>
+            )}
           </div>
         </div>
       </div>
