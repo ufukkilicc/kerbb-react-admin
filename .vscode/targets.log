@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Wed Oct 05 13:15:07 2022
+# Make data base, printed on Thu Oct 06 16:01:55 2022
 
 # Variables
 
@@ -30,7 +30,8 @@ HOMEDRIVE = C:
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
-CURDIR := c:/Users/ufukk/Desktop/Coding Projects/Kerbb/kerbb-react-admin
+CURDIR := c:/Users/ufukk/Desktop/Coding Pro 
+jects/Kerbb/kerbb-react-admin
 # default
 SHELL := sh.exe
 # environment
@@ -61,8 +62,7 @@ COMMONPROGRAMW6432 = C:\Program Files\Common Files
 PROCESSOR_ARCHITECTURE = x86
 # environment
 USERPROFILE = C:\Users\ufukk
-#  
-environment
+# environment
 ALLUSERSPROFILE = C:\ProgramData
 # environment
 NUMBER_OF_PROCESSORS = 4
@@ -73,7 +73,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_28788_UEXOJDIOUQXPEAIU
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_27540_FLEZVEEMRHSREUDD
 # environment
 COMPUTERNAME = DESKTOP-7JP9R10
 # environment
@@ -184,11 +184,10 @@ PROCESSOR_LEVEL = 6
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 28788
+VSCODE_PID = 27540
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-7JP9R10
-# variable set hash-table stat 
-s:
+# variable set hash-table stats:
 # Load=87/1024=8%, Rehash=0, Collisions=11/106=10%
 
 # Pattern-specific Variable Values
@@ -199,22 +198,21 @@ s:
 
 # C:\ProgramData\DockerDesktop\version-bin: could not be stat'd.
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633528696): 30 files, no impossibilities.
-# . (key c:/Users/ufukk/Desktop/Coding Projects/Kerbb/kerbb-react-admin, mtime 1661115187): 18 files, no impossibilities.
+# . (key c:/Users/ufukk/Desktop/Coding Projects/Kerbb/kerbb-react-admin, mtime 1664965430): 18 files, no impossibilities.
 # C:\Users\ufukk\AppData\Local\Programs\mongosh (key C:/Users/ufukk/AppData/Local/Programs/mongosh, mtime 1652285564): 8 files, no impossibilities.
 # C:\Users\ufukk\AppData\Roaming\npm (key C:/Users/ufukk/AppData/Roaming/npm, mtime 1662554638): 22 files, no impossibilities.
 # C:\Program Files\Docker\Docker\resources\bin (key C:/Program Files/Docker/Docker/resources/bin, mtime 1652439387): 13 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1653046097): 8 files, no impossibilities.
-# C:\Windows\Syste 
-m32\OpenSSH\: could not be stat'd.
+# C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1660157139): 53 files, no impossibilities.
 # C:\Users\ufukk\AppData\Local\Microsoft\WindowsApps (key C:/Users/ufukk/AppData/Local/Microsoft/WindowsApps, mtime 1664624454): 15 files, no impossibilities.
 # C:\Users\ufukk\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/ufukk/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1663265500): 4 files, no impossibilities.
-# C:\Windows (key C:/Windows, mtime 1663201059): 106 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1663201059): 106 files, 
+ no impossibilities.
 # C:\Users\ufukk\AppData\Local\Programs\Python\Python310\ (key C:/Users/ufukk/AppData/Local/Programs/Python/Python310/, mtime 1649688278): 18 files, no impossibilities.
 # C:\Users\ufukk\AppData\Local\Programs\Python\Python310\Scripts\ (key C:/Users/ufukk/AppData/Local/Programs/Python/Python310/Scripts/, mtime 1649866859): 9 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1657925746): 153 files, no impossibilities.
-# C:\Program Files\MongoDB\Too 
-ls\100\bin (key C:/Program Files/MongoDB/Tools/100/bin, mtime 1657367794): 11 files, no impossibilities.
+# C:\Program Files\MongoDB\Tools\100\bin (key C:/Program Files/MongoDB/Tools/100/bin, mtime 1657367794): 11 files, no impossibilities.
 # C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1652102013): 13 files, no impossibilities.
 # C:\Windows\system32 (key C:/Windows/system32, mtime 1663233862): 2870 files, no impossibilities.
 # C:\Program Files\nodejs (key C:/Program Files/nodejs, mtime 1652102013): 13 files, no impossibilities.
@@ -241,8 +239,7 @@ build-production:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 10):
 	docker build \
-		-t kerbb-admin-production:production 
- \
+		-t kerbb-admin-production:production \
 		-f Dockerfile.production .
 
 # Not a target:
@@ -296,7 +293,7 @@ build-dev:
 # strcache performance: lookups = 3405 / hit rate = 2%
 # hash-table stats:
 # Load=3331/8192=41%, Rehash=0, Collisions=1113/3405=33%
-# Finished Make data base on Wed Oct 05 13:15:07 2022
+# Finished Make data base on Thu Oct 06 16:01:55 2022
 
  
 make.exe: *** No rule to make target 'all'.  Stop.
