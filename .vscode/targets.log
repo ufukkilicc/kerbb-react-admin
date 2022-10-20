@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Thu Oct 06 16:01:55 2022
+# Make data base, printed on Fri Oct 21 01:29:22 2022
 
 # Variables
 
@@ -73,7 +73,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_27540_FLEZVEEMRHSREUDD
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6576_IRCCLNKNHUPCSEDF
 # environment
 COMPUTERNAME = DESKTOP-7JP9R10
 # environment
@@ -89,7 +89,7 @@ PUBLIC = C:\Users\Public
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\ufukk\AppData\Roaming\Code\CachedData\74b1f979648cc44d385a2286793c226e611f59e7
+VSCODE_CODE_CACHE_PATH = C:\Users\ufukk\AppData\Roaming\Code\CachedData\d045a5eda657f4d7b676dedbfa7aab8207f8a075
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
@@ -133,7 +133,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
 # environment
 OS = Windows_NT
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\f756fc3d327b142fea6c07452d166730-1.71.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\f756fc3d327b142fea6c07452d166730-1.72.2-main-sock
 # environment
 HOMEPATH = \Users\ufukk
 # environment
@@ -159,8 +159,7 @@ COMSPEC = C:\Windows\system32\cmd.exe
 # default
 MAKEFILES := 
 # automatic
-<F =  
-$(notdir $<)
+<F = $(notdir $<)
 # environment
 LC_ALL = C
 # automatic
@@ -184,10 +183,11 @@ PROCESSOR_LEVEL = 6
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 27540
+VSCODE_PID = 6576
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-7JP9R10
-# variable set hash-table stats:
+# variable set hash-table stats: 
+
 # Load=87/1024=8%, Rehash=0, Collisions=11/106=10%
 
 # Pattern-specific Variable Values
@@ -205,20 +205,19 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-7JP9R10
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1653046097): 8 files, no impossibilities.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1660157139): 53 files, no impossibilities.
-# C:\Users\ufukk\AppData\Local\Microsoft\WindowsApps (key C:/Users/ufukk/AppData/Local/Microsoft/WindowsApps, mtime 1664624454): 15 files, no impossibilities.
-# C:\Users\ufukk\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/ufukk/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1663265500): 4 files, no impossibilities.
-# C:\Windows (key C:/Windows, mtime 1663201059): 106 files, 
- no impossibilities.
+# C:\Users\ufukk\AppData\Local\Microsoft\WindowsApps (key C:/Users/ufukk/AppData/Local/Microsoft/WindowsApps, mtime 1665834634): 15 files, no impossibilities.
+# C:\Users\ufukk\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/ufukk/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1665751918): 4 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1665581353): 105 files, no impossibilities.
 # C:\Users\ufukk\AppData\Local\Programs\Python\Python310\ (key C:/Users/ufukk/AppData/Local/Programs/Python/Python310/, mtime 1649688278): 18 files, no impossibilities.
 # C:\Users\ufukk\AppData\Local\Programs\Python\Python310\Scripts\ (key C:/Users/ufukk/AppData/Local/Programs/Python/Python310/Scripts/, mtime 1649866859): 9 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1657925746): 153 files, no impossibilities.
 # C:\Program Files\MongoDB\Tools\100\bin (key C:/Program Files/MongoDB/Tools/100/bin, mtime 1657367794): 11 files, no impossibilities.
 # C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1652102013): 13 files, no impossibilities.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1663233862): 2870 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1666258459): 2870 files, no impossibilities.
 # C:\Program Files\nodejs (key C:/Program Files/nodejs, mtime 1652102013): 13 files, no impossibilities.
 # C:\Program Files\MongoDB\Server\5.0\bin (key C:/Program Files/MongoDB/Server/5.0/bin, mtime 1652299793): 9 files, no impossibilities.
 
-# 3373 files, no impossibilities in 20 directories.
+# 3372 files, no impossibilities in 20 directories.
 
 # Implicit Rules
 
@@ -279,22 +278,23 @@ build-dev:
 
 # files hash-table stats:
 # Load=7/1024=1%, Rehash=0, Collisions=0/17=0%
-# VPATH Search Paths
+# VPATH Search Path 
+make.exe: *** No rule to make target 'all'.  Stop.
+
+s
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (5) / strings = 3331 / storage = 49983 B / avg = 15 B
-# current buf: size = 8174 B / used = 990 B / count = 75 / avg = 13 B
-# other used: total = 41809 B / count = 3256 / avg = 12 B
-# other free: total = 51 B / max = 16 B / min = 2 B / avg = 8 B
+# strcache buffers: 7 (6) / strings = 3330 / storage = 49970 B / avg = 15 B
+# current buf: size = 8174 B / used = 971 B / count = 74 / avg = 13 B
+# other used: total = 41796 B / count = 3256 / avg = 12 B
+# other free: total = 45 B / max = 12 B / min = 2 B / avg = 7 B
 
-# strcache performance: lookups = 3405 / hit rate = 2%
+# strcache performance: lookups = 3404 / hit rate = 2%
 # hash-table stats:
-# Load=3331/8192=41%, Rehash=0, Collisions=1113/3405=33%
-# Finished Make data base on Thu Oct 06 16:01:55 2022
+# Load=3330/8192=41%, Rehash=0, Collisions=1113/3404=33%
+# Finished Make data base on Fri Oct 21 01:29:22 2022
 
  
-make.exe: *** No rule to make target 'all'.  Stop.
-
