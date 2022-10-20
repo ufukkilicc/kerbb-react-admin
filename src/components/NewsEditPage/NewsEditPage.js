@@ -65,6 +65,7 @@ const NewsEditPage = () => {
       setNewsImageUrl(news.image_url);
       setNewsImageSecondaryUrl(news.image_url_secondary);
       setNewsExistingPublisher(news.news_publisher);
+      setNewsPublisher(news.news_publisher);
     }
     fetchData();
   }, []);
