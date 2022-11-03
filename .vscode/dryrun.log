@@ -1,5 +1,6 @@
 make.exe --dry-run --always-make --keep-going --print-directory
-make.exe: Entering directory 'c:/Users/ufukk/Desktop/Coding Projects/Kerbb/kerbb-react-admin'
+make.exe: Entering directory 'c:/Users/ufukk/Desktop/Coding Projects/Kerbb Project/Kerbb/kerbb-react-admin'
 docker build -t kerbb-admin-dev -f Dockerfile.dev .
-make.exe: Leaving directory 'c:/Users/ufukk/Desktop/Coding Projects/Kerbb/kerbb-react-admin'
+ 
+make.exe: Leaving directory 'c:/Users/ufukk/Desktop/Coding Projects/Kerbb Project/Kerbb/kerbb-react-admin'
  
