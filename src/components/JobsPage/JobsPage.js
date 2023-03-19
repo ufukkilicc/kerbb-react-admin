@@ -82,7 +82,6 @@ const JobsPage = () => {
     setPageTitle(title);
   };
   const handlePaginationChange = async (e) => {
-    (jobSearchObject);
     const requestedPage = e.target.textContent;
     if (jobsPage !== requestedPage) {
       dispatch(updateJobsPage(requestedPage));
