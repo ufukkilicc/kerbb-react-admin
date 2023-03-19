@@ -11,7 +11,7 @@ export const fetchCompanies = async (paramObject) => {
             state: paramObject.state,
           },
         })
-        .catch((err) => console.log(err));
+        .catch((err) => (err));
       return response;
     } else if (paramObject.is_highlighted) {
       const response = await axios
@@ -22,7 +22,7 @@ export const fetchCompanies = async (paramObject) => {
             is_highlighted: paramObject.is_highlighted,
           },
         })
-        .catch((err) => console.log(err));
+        .catch((err) => (err));
       return response;
     } else {
       const response = await axios
@@ -31,20 +31,20 @@ export const fetchCompanies = async (paramObject) => {
             page: paramObject.page,
           },
         })
-        .catch((err) => console.log(err));
+        .catch((err) => (err));
       return response;
     }
   } else {
     const response = await axios
       .get(`${BASE_URL}/companies`)
-      .catch((err) => console.log(err));
+      .catch((err) => (err));
     return response;
   }
 };
 export const fetchCompany = async (id) => {
   const response = await axios
     .get(`${BASE_URL}/companies/${id}`)
-    .catch((err) => console.log(err));
+    .catch((err) => (err));
   return response;
 };
 export const postCompany = async (token, body) => {
@@ -78,7 +78,7 @@ export const uploadCompanyLogo = async (token, id, file) => {
         Authorization: `Bearer ${token}`,
       },
     })
-    .catch((err) => console.log(err));
+    .catch((err) => (err));
   return response;
 };
 export const uploadCompanyCover = async (token, id, file) => {
@@ -91,7 +91,7 @@ export const uploadCompanyCover = async (token, id, file) => {
         Authorization: `Bearer ${token}`,
       },
     })
-    .catch((err) => console.log(err));
+    .catch((err) => (err));
   return response;
 };
 export const highlightCompany = async (token, id) => {

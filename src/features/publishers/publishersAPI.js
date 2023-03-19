@@ -107,6 +107,6 @@ export const uploadNewsImage = async (token, id, file) => {
         Authorization: `Bearer ${token}`,
       },
     })
-    .catch((err) => console.log(err));
+    .catch((err) => (err));
   return response;
 };

@@ -35,7 +35,6 @@ export const jobsSlice = createSlice({
     },
     removeJob: (state, { payload }) => {
       let newState = state.jobs.filter((job) => job._id !== payload);
-      console.log(newState);
       state.jobs = newState;
     },
     updateJobsPage: (state, { payload }) => {

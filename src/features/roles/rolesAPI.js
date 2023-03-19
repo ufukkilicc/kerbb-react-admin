@@ -8,6 +8,6 @@ export const fetchRoles = async (paramObject) => {
         page: paramObject.page,
       },
     })
-    .catch((err) => console.log(err));
+    .catch((err) => (err));
   return response;
 };

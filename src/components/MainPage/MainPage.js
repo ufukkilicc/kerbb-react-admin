@@ -31,7 +31,7 @@ const MainPage = () => {
       // dispatch(addCompaniesInfo(scrapperInfoResponse.data));
       // const jobsResponse = await fetchJobs();
       // const companiesResponse = await fetchCompanies();
-      // console.log(companiesResponse);
+      // (companiesResponse);
       // dispatch(addJobs(jobsResponse.data));
       // dispatch(addCompanies(companiesResponse.data));
     }

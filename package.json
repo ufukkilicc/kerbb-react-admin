@@ -34,7 +34,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node ./setup && set PORT=3030 && react-scripts start",
+    "start": "node ./setup && cross-env PORT=3030 react-scripts start",
     "build": "react-scripts build",
     "build:production": "set NODE_ENV=production && react-scripts build",
     "test": "react-scripts test",

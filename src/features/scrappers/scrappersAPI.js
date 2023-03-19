@@ -10,7 +10,7 @@ export const fetchScrappers = async (paramObject) => {
             success: paramObject.success,
           },
         })
-        .catch((err) => console.log(err));
+        .catch((err) => (err));
       return response;
     } else {
       const response = await axios
@@ -19,13 +19,13 @@ export const fetchScrappers = async (paramObject) => {
             page: paramObject.page,
           },
         })
-        .catch((err) => console.log(err));
+        .catch((err) => (err));
       return response;
     }
   } else {
     const response = await axios
       .get(`${BASE_URL}/scrapper`)
-      .catch((err) => console.log(err));
+      .catch((err) => (err));
     return response;
   }
 };
@@ -34,7 +34,7 @@ export const fetchScrapper = async (token, id) => {
     method: "get",
     url: `${BASE_URL}/scrapper/one/${id}`,
     headers: { Authorization: `Bearer ${token}` },
-  }).catch((err) => console.log(err));
+  }).catch((err) => (err));
   return response;
 };
 export const scrapeAll = async (token) => {
@@ -42,7 +42,7 @@ export const scrapeAll = async (token) => {
     method: "get",
     url: `${BASE_URL}/scrapper/scrape-all`,
     headers: { Authorization: `Bearer ${token}` },
-  }).catch((err) => console.log(err));
+  }).catch((err) => (err));
   return response;
 };
 export const scrapeOne = async (token, scrape_name) => {

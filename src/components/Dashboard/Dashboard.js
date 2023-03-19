@@ -49,7 +49,7 @@ const Dashboard = () => {
     fetchData();
   }, []);
   // const companies = useSelector(getAllCompanies);
-  // console.log(companies);
+  // (companies);
   return (
     <div className="dashboard-container">
       <div className="side-navbar-container">

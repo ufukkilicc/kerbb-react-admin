@@ -12,13 +12,13 @@ export const fetchJobs = async (paramObject) => {
         query_text: paramObject.query_text,
       },
     })
-    .catch((err) => console.log(err));
+    .catch((err) => (err));
   return response;
 };
 export const fetchJob = async (id) => {
   const response = await axios
     .get(`${BASE_URL}/jobs/${id}`)
-    .catch((err) => console.log(err));
+    .catch((err) => (err));
   return response;
 };
 export const updateJob = async (token, id, body) => {

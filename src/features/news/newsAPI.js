@@ -10,13 +10,13 @@ export const fetchNews = async (paramObject) => {
         size: paramObject.size,
       },
     })
-    .catch((err) => console.log(err));
+    .catch((err) => (err));
   return response;
 };
 export const fetchOneNews = async (id) => {
   const response = await axios
     .get(`${BASE_URL}/news/${id}`)
-    .catch((err) => console.log(err));
+    .catch((err) => (err));
   return response;
 };
 export const postNews = async (token, body) => {
@@ -70,7 +70,7 @@ export const uploadNewsImage = async (token, id, file) => {
         Authorization: `Bearer ${token}`,
       },
     })
-    .catch((err) => console.log(err));
+    .catch((err) => (err));
   return response;
 };
 export const uploadNewsImageSecondary = async (token, id, file) => {
@@ -83,6 +83,6 @@ export const uploadNewsImageSecondary = async (token, id, file) => {
         Authorization: `Bearer ${token}`,
       },
     })
-    .catch((err) => console.log(err));
+    .catch((err) => (err));
   return response;
 };
