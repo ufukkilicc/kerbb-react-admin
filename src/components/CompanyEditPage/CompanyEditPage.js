@@ -48,6 +48,8 @@ const CompanyEditPage = () => {
   const [companyImageUrl, setCompanyImageUrl] = useState("");
   const [companyCoverImageUrl, setCompanyCoverImageUrl] = useState("");
   const [companyScrapeName, setCompanyScrapeName] = useState("");
+  const [companyStaffCount, setCompanyStaffCount] = useState();
+  const [companySector, setCompanySector] = useState("");
   const [pageTitle, setPageTitle] = useState("");
 
   useEffect(() => {
@@ -68,6 +70,8 @@ const CompanyEditPage = () => {
       setCompanyScrapeName(company.scrape_name);
       setCompanyHighlightOrder(company.highlight_order);
       setCompanyIsApproved(company.is_approved);
+      setCompanyStaffCount(company.staff_count);
+      setCompanySector(company.sector);
     }
     fetchData();
   }, []);
@@ -133,6 +137,8 @@ const CompanyEditPage = () => {
     const body = {
       name: companyName,
       scrape_name: companyScrapeName,
+      staff_count: companyStaffCount,
+      sector: companySector,
     };
     setSubmitButtonLoading(true);
     const updateCompanyResponse = await updateCompany(token, id, body);
@@ -146,6 +152,14 @@ const CompanyEditPage = () => {
   const handleCompanyNameChange = (e) => {
     const companyNameValue = e.target.value;
     setCompanyName(companyNameValue);
+  };
+  const handleCompanyStaffCountChange = (e) => {
+    const companySectorValue = e.target.value;
+    setCompanyStaffCount(companySectorValue);
+  };
+  const handleCompanySectorChange = (e) => {
+    const companySectorValue = e.target.value;
+    setCompanySector(companySectorValue);
   };
   const handleCompanyScrapeNameChange = (e) => {
     const companyScrapeNameValue = e.target.value;
@@ -265,6 +279,20 @@ const CompanyEditPage = () => {
               variant="outlined"
               value={companyScrapeName}
               onChange={handleCompanyScrapeNameChange}
+            />
+            <TextField
+              id="outlined-basic"
+              label="Staff Count"
+              variant="outlined"
+              value={companyStaffCount}
+              onChange={handleCompanyStaffCountChange}
+            />
+            <TextField
+              id="outlined-basic"
+              label="Sector"
+              variant="outlined"
+              value={companySector}
+              onChange={handleCompanySectorChange}
             />
             <TextField
               id="outlined-basic"
