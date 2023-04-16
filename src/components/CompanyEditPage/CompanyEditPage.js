@@ -25,6 +25,7 @@ import { getCookie } from "../../helpers/authHelper";
 import alertify from "alertifyjs";
 import Skeleton from "@mui/material/Skeleton";
 import { Helmet } from "react-helmet";
+import { TextareaAutosize } from "@mui/material";
 // import PhotoCamera from '@mui/icons-material/PhotoCamera';
 
 const CompanyEditPage = () => {
@@ -50,6 +51,7 @@ const CompanyEditPage = () => {
   const [companyScrapeName, setCompanyScrapeName] = useState("");
   const [companyStaffCount, setCompanyStaffCount] = useState();
   const [companySector, setCompanySector] = useState("");
+  const [companyAbout, setCompanyAbout] = useState("");
   const [pageTitle, setPageTitle] = useState("");
 
   useEffect(() => {
@@ -72,6 +74,7 @@ const CompanyEditPage = () => {
       setCompanyIsApproved(company.is_approved);
       setCompanyStaffCount(company.staff_count);
       setCompanySector(company.sector);
+      setCompanyAbout(company.about);
     }
     fetchData();
   }, []);
@@ -97,6 +100,10 @@ const CompanyEditPage = () => {
   };
   const handleCoverImageButtonFalse = () => {
     setCoverImageButton(false);
+  };
+  const handleAboutChange = (e) => {
+    const val = e.target.value;
+    setCompanyAbout(val);
   };
   const changeLogo = async (e) => {
     const token = getCookie("k_t");
@@ -139,6 +146,7 @@ const CompanyEditPage = () => {
       scrape_name: companyScrapeName,
       staff_count: companyStaffCount,
       sector: companySector,
+      about: companyAbout,
     };
     setSubmitButtonLoading(true);
     const updateCompanyResponse = await updateCompany(token, id, body);
@@ -321,6 +329,14 @@ const CompanyEditPage = () => {
               variant="outlined"
               value={companyIsActive}
               disabled
+            />
+            <TextareaAutosize
+              id="outlined-basic"
+              label="Active"
+              variant="outlined"
+              value={companyAbout}
+              minRows={5}
+              onChange={handleAboutChange}
             />
             <TextField
               id="outlined-basic"
