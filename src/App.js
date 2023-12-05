@@ -36,22 +36,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route
-            index
-            element={
-              <ProtectedRoute redirect_url={"/auth/login"}>
-                <Dashboard />
-              </ProtectedRoute>
-            }
-          />
-          <Route
             path="dashboard/*"
             element={
-              <ProtectedRoute redirect_url={"/auth/login"}>
-                <Dashboard />
-              </ProtectedRoute>
+              <Dashboard />
             }
           />
-          <Route path="auth/*" element={<Auth />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
